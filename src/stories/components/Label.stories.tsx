@@ -33,3 +33,9 @@ Tertiary.args = {
     color: 'Tertiary',
     size: "normal",
 }
+
+
+export const backgroundColor = Template.bind({});
+backgroundColor.args = {
+   backgroundColor: '#ff0000'
+}
