@@ -1,7 +1,28 @@
 {
   "name": "qubit-ui",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "license": "MIT",
+  "typings": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "home": "https://jonathanybarra.github.io/QubitUI/",
+  "repository": {
+    "url": "https://github.com/JonathanYbarra/QubitUI",
+    "type": "git"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "typescript": ">=4.0.0"
+  },
+  "release": {
+    "branches": [
+      "master"
+    ]
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
   "dependencies": {
     "@storybook/addon-postcss": "^2.0.0",
     "@testing-library/jest-dom": "^5.16.1",
@@ -11,17 +32,21 @@
     "@types/node": "^16.11.17",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
-    "react": "^17.0.2",
+    "copyfiles": "^2.4.1",
+    "react": ">=16",
     "react-dom": "^17.0.2",
-    "typescript": "^4.5.4",
+    "rimraf": "^3.0.2",
+    "typescript": ">=4.0.0",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
     "start": "start-storybook -p 6006",
-    "build": "build-storybook",
+    "build": "npm run clean && tsc && npm run copy-files",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=2ee8c72b1d5f"
+    "chromatic": "npx chromatic --project-token=2ee8c72b1d5f",
+    "clean": "rimraf dist/",
+    "copy-files": "copyfiles -u 1 src/**/*.css dist/"
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +73,15 @@
     "@storybook/addon-links": "^6.4.9",
     "@storybook/react": "^6.4.9",
     "babel-loader": "^8.2.3",
-    "chromatic": "^6.4.1"
-  }
+    "chromatic": "^6.4.1",
+    "semantic-release": "^19.0.2"
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ]
 }
