@@ -3,14 +3,31 @@ module.exports = {
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    {
-      name: "@storybook/addon-postcss",
-      options: {
-        postcssLoaderOptions: {
-          implementation: require("postcss"),
-        },
-      },
-    },
+    "@storybook/addon-a11y",
+    "@react-theming/storybook-addon",
   ],
-  framework: "@storybook/react",
+  webpackFinal: async (config) => {
+    config.resolve = {
+      ...(config.resolve || {}),
+      extensions: [".ts", ".tsx", ".js"],
+    };
+    config.module.rules = config.module.rules.filter((f) => f.test.toString() !== "/\\.css$/");
+    config.module.rules.push({
+      test: /\.css$/,
+      use: [
+        "style-loader",
+        {
+          loader: "css-loader",
+          options: {
+            importLoaders: 1,
+            modules: {
+              localIdentName: "[path]-[hash:base64:5]",
+            },
+          },
+        },
+      ],
+    });
+    config.resolve.mainFields = ["src", "module", "main"];
+    return config;
+  },
 };
