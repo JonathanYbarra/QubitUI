@@ -1,1 +1,1 @@
-export { Label } from './label/Label';
+"use strict";
