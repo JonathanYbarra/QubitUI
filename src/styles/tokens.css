@@ -258,6 +258,14 @@
   --color-blue-gray-800: #1e293b;
   --color-blue-gray-900: #0f172a;
 
+  --size-1: 1rem;
+  --size-2: 1.5rem;
+  --size-3: 2rem;
+  --size-4: 3rem;
+  --size-5: 4rem;
+  --size-6: 5rem;
+  --size-7: 6rem;
+
   --spacing-none: 0;
   --spacing-xs: 5;
   --spacing-sm: 15;
@@ -384,4 +392,10 @@
 
   --modal-desktop-height: 650px;
   --modal-desktop-max-width: 750px;
+
+  --icon-size-xs: 1rem;
+  --icon-size-sm: 1.5rem;
+  --icon-size-md: 2rem;
+  --icon-size-lg: 3rem;
+  --icon-size-xl: 4rem;
 }

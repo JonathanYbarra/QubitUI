@@ -1,25 +1,31 @@
-
-.tiny {
-    width: 10px;
-    height: 10px;
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
 }
 
-.small {
-    width: 20px;
-    height: 20px;
+.xs {
+    width: var(--icon-size-xs);
+    height: var(--icon-size-xs);
 }
 
-.medium {
-    width: 30px;
-    height: 30px;
+.sm {
+    width: var(--icon-size-sm);
+    height: var(--icon-size-sm);
 }
 
-.large {
-    width: 40px;
-    height: 40px;
+.md {
+    width: var(--icon-size-md);
+    height: var(--icon-size-md);
 }
 
-.xlarge {
-    width: 50px;
-    height: 50px;
+.lg {
+    width: var(--icon-size-lg);
+    height: var(--icon-size-lg);
+}
+
+.xl {
+    width: var(--icon-size-xl);
+    height: var(--icon-size-xl);
 }

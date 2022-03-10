@@ -304,6 +304,15 @@ const choices = {
       900: "#0f172a",
     },
   },
+  size: {
+    1: "1rem",
+    2: "1.5rem",
+    3: "2rem",
+    4: "3rem",
+    5: "4rem",
+    6: "5rem",
+    7: "6rem",
+  },
   spacing: {
     none: 0,
     xs: 5,
@@ -461,9 +470,18 @@ const decisions = {
       maxWidth: "750px",
     },
   },
+  icon: {
+    size: {
+      xs: choices.size[1],
+      sm: choices.size[2],
+      md: choices.size[3],
+      lg: choices.size[4],
+      xl: choices.size[5],
+    },
+  },
 };
 
 module.exports = {
   choices,
-  decisions
+  decisions,
 };

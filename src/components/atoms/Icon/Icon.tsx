@@ -1,12 +1,15 @@
 import { ReactElement, DOMAttributes } from "react";
-import Icons from "./Icons";
 import { IconProps } from "../../../common";
+import clsx from "../../../utils/clsx";
+import styles from "./Icon.module.css";
+import Icons from "./Icons";
 
 export type Props = {
     size?: string;
+    className?: string;
 } & IconProps & DOMAttributes<HTMLOrSVGElement>;
 
-export const Icon = ({ size = "tiny", className }: Props): ReactElement => {
+export const Icon = ({ size = "medium", className }: Props): ReactElement => {
     const SvgFC = Icons["add"];
-    return <SvgFC className="tiny" />;
+    return <SvgFC className={clsx(className, styles.icon, styles[size])} />;
 }
