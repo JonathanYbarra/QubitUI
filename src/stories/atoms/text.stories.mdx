@@ -1,0 +1,57 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import { Text } from "../../components/atoms/Text";
+
+<Meta
+  title="Atoms / Text"
+  component={Text}
+  parameters={{ controls: { sort: "requiredFirst" } }}
+/>
+
+# Variants
+
+<Canvas>
+  <Story name="Variants">
+    <Text variant="h1">This is a h1</Text>
+    <Text variant="h2">This is a h2</Text>
+    <Text variant="h3">This is a h3</Text>
+    <Text variant="h4">This is a h4</Text>
+    <Text variant="h5">This is a h5</Text>
+    <Text variant="h6">This is a h6</Text>
+    <Text variant="p">This is a p</Text>
+    <Text variant="span">This is a span</Text>
+  </Story>
+</Canvas>
+
+---
+
+# Align
+
+<Canvas>
+  <Story name="Align">
+    <Text variant="h3">This is a h3</Text>
+    <Text variant="h3" align="center">
+      This is a h3
+    </Text>
+    <Text variant="h3" align="right">
+      This is a h3
+    </Text>
+  </Story>
+</Canvas>
+
+---
+
+# Color
+
+<Canvas>
+  <Story name="Colors">
+    <Text color="primary" variant="p">
+      This is a primary text
+    </Text>
+    <Text color="secondary" variant="p">
+      This is a secondary text
+    </Text>
+    <Text variant="p" color="tertiary">This is a tertiary text</Text>
+    <Text variant="p" color="error">This is a error text</Text>
+    <Text variant="p" color="success">This is a success text</Text>
+  </Story>
+</Canvas>

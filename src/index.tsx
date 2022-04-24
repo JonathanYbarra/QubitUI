@@ -1,2 +1,2 @@
-export { Button } from './stories/Button';
 export { Icon } from './components/atoms/Icon';
+export { Text } from './components/atoms/Text';

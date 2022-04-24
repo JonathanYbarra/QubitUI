@@ -13,8 +13,10 @@ const choices = {
       hintOfRed: "#f9f9f9",
       romance: "#fcfdfd",
       mediumSpringGreen: "#00e5a8",
+      slate: "#0f172a",
+      neutral: "#171717",
+      cyan: "#0e7490",
     },
-
     base: {
       black: "#000",
       white: "#fff",
@@ -398,19 +400,19 @@ const choices = {
 
 const decisions = {
   color: {
-    primary: choices.color.brand.mediumPurple,
+    primary: choices.color.brand.eastBay,
     primaryMuted: choices.color.brand.slateBlue,
     primaryHighlight: choices.color.brand.blueMoon,
     primaryInverted: choices.color.brand.romance,
-    fontBase: choices.color.brand.eastBay,
+    fontBase: choices.color.brand.neutral,
     fontMuted: choices.color.brand.regentGray,
     fontHighlight: choices.color.brand.loblolly,
     fontInverted: choices.color.base.white,
-    secondary: choices.color.brand.amaranth,
+    secondary: choices.color.cyan[700],
     secondaryMuted: choices.color.brand.mandy,
     secondaryHighlight: choices.color.rose[200],
     secondaryInverted: choices.color.base.white,
-    tertiary: choices.color.brand.mediumSpringGreen,
+    tertiary: choices.color.brand.mediumPurple,
     tertiaryMuted: choices.color.emerald[400],
     tertiaryHighlight: choices.color.emerald[200],
     tertiaryInverted: choices.color.base.white,

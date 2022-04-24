@@ -11,6 +11,9 @@
   --color-brand-hint-of-red: #f9f9f9;
   --color-brand-romance: #fcfdfd;
   --color-brand-medium-spring-green: #00e5a8;
+  --color-brand-slate: #0f172a;
+  --color-brand-neutral: #171717;
+  --color-brand-cyan: #0e7490;
 
   --color-base-black: #000;
   --color-base-white: #fff;
@@ -336,19 +339,19 @@
   --z-index-50: 50;
   --z-index-auto: auto;
 
-  --color-primary: #9879e9;
+  --color-primary: #455970;
   --color-primary-muted: #7559d1;
   --color-primary-highlight: #eff1fd;
   --color-primary-inverted: #fcfdfd;
-  --color-font-base: #455970;
+  --color-font-base: #171717;
   --color-font-muted: #7e858c;
   --color-font-highlight: #b7b7b7;
   --color-font-inverted: #fff;
-  --color-secondary: #eb2d52;
+  --color-secondary: #0e7490;
   --color-secondary-muted: #eb4e58;
   --color-secondary-highlight: #fecdd3;
   --color-secondary-inverted: #fff;
-  --color-tertiary: #00e5a8;
+  --color-tertiary: #9879e9;
   --color-tertiary-muted: #34d399;
   --color-tertiary-highlight: #a7f3d0;
   --color-tertiary-inverted: #fff;
