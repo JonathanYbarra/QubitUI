@@ -14,11 +14,13 @@ import { Icon } from "./Icon";
 ---
 
 # **How to import**
+
 You can import Tag component as follows.
 
 <Source code='import { Icon } from "qubit-ui";' language="jsx" />
 
 # **Sizes**
+
 For larger or smaller icon, you can use the `size` prop. the default size is `md`.
 
 **`xs`** has 1.875rem heigth.
@@ -29,12 +31,21 @@ For larger or smaller icon, you can use the `size` prop. the default size is `md
 
 **`xl`** has 3rem heigth.
 
-
 <Canvas>
-  <Story name="Default">
+  <Story name="Sizes">
     <Icon size="xs" name="home" />
     <Icon size="md" name="home" />
     <Icon size="lg" name="home" />
     <Icon size="xl" name="home" />
+  </Story>
+</Canvas>
+
+# **Colors**
+
+<Canvas>
+  <Story name="Colors">
+    <Icon name="home" color="primary"/>
+    <Icon name="home" color="secondary"/>
+    <Icon name="home" color="tertiary"/>
   </Story>
 </Canvas>
