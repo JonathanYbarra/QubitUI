@@ -1,3 +1,5 @@
-import add from "../../../assets/icons/Add";
+import home from "../../../assets/icons/home";
+import terminal from "../../../assets/icons/terminal";
 
-export default { add };
+
+export default { home, terminal };

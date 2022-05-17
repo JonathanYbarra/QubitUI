@@ -1,11 +1,19 @@
-import { Canvas, Meta, Story } from "@storybook/addon-docs";
-import { Text } from "../../components/atoms/Text";
+import { Canvas, Meta, Story, Source } from "@storybook/addon-docs";
+import { Text } from "./Text.tsx";
 
 <Meta
   title="Atoms / Text"
   component={Text}
   parameters={{ controls: { sort: "requiredFirst" } }}
 />
+
+# **How to import**
+
+You can import Tag component as follows.
+
+<Source code='import { Text } from "qubit-ui";' language="jsx" />
+
+---
 
 # Variants
 
@@ -50,8 +58,14 @@ import { Text } from "../../components/atoms/Text";
     <Text color="secondary" variant="p">
       This is a secondary text
     </Text>
-    <Text variant="p" color="tertiary">This is a tertiary text</Text>
-    <Text variant="p" color="error">This is a error text</Text>
-    <Text variant="p" color="success">This is a success text</Text>
+    <Text variant="p" color="tertiary">
+      This is a tertiary text
+    </Text>
+    <Text variant="p" color="error">
+      This is a error text
+    </Text>
+    <Text variant="p" color="success">
+      This is a success text
+    </Text>
   </Story>
 </Canvas>

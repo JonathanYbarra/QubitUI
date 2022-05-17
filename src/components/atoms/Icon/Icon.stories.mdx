@@ -1,0 +1,40 @@
+import { Canvas, Meta, Story, Source } from "@storybook/addon-docs";
+import { Icon } from "./Icon";
+
+<Meta
+  title="Atoms / Icon"
+  component={Icon}
+  parameters={{ controls: { sort: "requiredFirst" } }}
+/>
+
+# Icon
+
+### Qubit-ui it has included 2 Icons
+
+---
+
+# **How to import**
+You can import Tag component as follows.
+
+<Source code='import { Icon } from "qubit-ui";' language="jsx" />
+
+# **Sizes**
+For larger or smaller icon, you can use the `size` prop. the default size is `md`.
+
+**`xs`** has 1.875rem heigth.
+
+**`md`** has 2.5rem heigth.
+
+**`lg`** has 3rem heigth.
+
+**`xl`** has 3rem heigth.
+
+
+<Canvas>
+  <Story name="Default">
+    <Icon size="xs" name="home" />
+    <Icon size="md" name="home" />
+    <Icon size="lg" name="home" />
+    <Icon size="xl" name="home" />
+  </Story>
+</Canvas>

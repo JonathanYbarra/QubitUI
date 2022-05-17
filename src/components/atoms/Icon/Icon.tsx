@@ -1,19 +1,23 @@
 import { ReactElement, DOMAttributes } from "react";
-import { IconProps } from "../../../common";
 import { string } from 'prop-types';
+import type { IconProps, DefaultColors, Size } from "../../../common";
 import clsx from "../../../utils/clsx";
-import styles from "./Icon.module.css";
 import Icons from "./Icons";
+import styles from "./Icon.module.css";
 
-export type Size = "xs" | "sm" | "md" | "lg" | "xl";
+export type Name = keyof typeof Icons;
+
+
 export type Props = {
     size?: Size;
     className?: string;
+    name?: Name;
+    color?: DefaultColors;
 } & IconProps & DOMAttributes<HTMLOrSVGElement>;
 
-export const Icon = ({ size = "md", className }: Props): ReactElement => {
-    const SvgFC = Icons["add"];
-    return <SvgFC className={clsx(className, styles.icon, styles[size])} />;
+export const Icon = ({ size = "md", color = "primary", name, className }: Props): ReactElement => {
+    const SvgFC = Icons[name as Name];
+    return <SvgFC className={clsx(className, styles.icon, styles[size])} stroke={color} />;
 }
 
 Icon.prototype = {
