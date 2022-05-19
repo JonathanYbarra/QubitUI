@@ -5,8 +5,8 @@ export default function Svg({ stroke, className = "" }: IconProps): ReactElement
     return (
         <svg
             className={className}
-            fill="none"
             viewBox="0 0 24 24"
+            fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth="1.5"
@@ -14,9 +14,10 @@ export default function Svg({ stroke, className = "" }: IconProps): ReactElement
             xmlns="http://www.w3.org/2000/svg"
         >
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <polyline points="5 12 3 12 12 3 21 12 19 12" />
-            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-            <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" fill={`var(--color-${stroke})`} />
+            <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+            <line x1="12" y1="12" x2="12" y2="12.01" />
+            <line x1="8" y1="12" x2="8" y2="12.01" />
+            <line x1="16" y1="12" x2="16" y2="12.01" />
         </svg>
     )
 }
