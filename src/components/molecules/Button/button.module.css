@@ -1,0 +1,17 @@
+.button {
+  align-items: center;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.5em 1em;
+}
+
+.btn-primary {
+  background-color: var(--background-color-primary);
+  border: 1px solid var(--background-color-primary);
+  border-radius: 10px;
+}

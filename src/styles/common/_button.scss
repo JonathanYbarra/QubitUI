@@ -1,0 +1,30 @@
+@mixin button-base {
+  align-items: center;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+  vertical-align: middle;
+
+  &:disabled,
+  &:hover:disabled,
+  &:focus:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+@mixin button($font-color, $bg-color, $hover-bg-color, $focus-color) {
+  @include button-base;
+
+  background-color: $backgroundColor-primary;
+  border: 1px solid $backgroundColor-primary;
+  border-radius: 10px;
+}

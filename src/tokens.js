@@ -416,10 +416,12 @@ const decisions = {
     tertiaryMuted: choices.color.emerald[400],
     tertiaryHighlight: choices.color.emerald[200],
     tertiaryInverted: choices.color.base.white,
+    white: choices.color.brand.whiteLilac,
   },
   backgroundColor: {
-    primary: choices.color.brand.whiteLilac,
-    primaryHighlight: choices.color.brand.romance,
+    default: choices.color.brand.whiteLilac,
+    defaultHighlight: choices.color.brand.romance,
+    primary: choices.color.brand.mediumPurple,
   },
   container: {
     maxWidth: "800px",

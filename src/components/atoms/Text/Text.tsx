@@ -22,7 +22,7 @@ export type Props = {
     variant?: Variants;
     className?: string;
     align?: "left" | "center" | "right";
-    color?: "primary" | "secondary" | "tertiary";
+    color?: "primary" | "secondary" | "tertiary" | "light";
 } & HTMLAttributes<HTMLElement>;
 
 export const Text = ({ variant = "span", className, align = "left", color, ...rest }: Props): ReactElement => {

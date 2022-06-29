@@ -17,3 +17,7 @@
 .color-success{
     color: var(--color-green-500);
 }
+
+.color-light{
+    color: var(--color-white);
+}

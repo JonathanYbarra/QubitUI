@@ -1,0 +1,24 @@
+import { Canvas, Meta, Story, Source } from "@storybook/addon-docs";
+import { Button } from "./Button.tsx";
+
+<Meta
+  title="Molecules / Button"
+  component={Button}
+  parameters={{ controls: { sort: "requiredFirst" } }}
+/>
+
+# **How to import**
+
+You can import Tag component as follows.
+
+<Source code='import { Button } from "qubit-ui";' language="jsx" />
+
+---
+
+<Canvas>
+  <Story name="Buttons">
+    <Button>Continue</Button>
+    <Button>Submit</Button>
+    <Button>Send</Button>
+  </Story>
+</Canvas>

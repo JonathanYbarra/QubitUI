@@ -355,9 +355,11 @@
   --color-tertiary-muted: #34d399;
   --color-tertiary-highlight: #a7f3d0;
   --color-tertiary-inverted: #fff;
+  --color-white: #e8e8e8;
 
-  --background-color-primary: #e8e8e8;
-  --background-color-primary-highlight: #fcfdfd;
+  --background-color-default: #e8e8e8;
+  --background-color-default-highlight: #fcfdfd;
+  --background-color-primary: #9879e9;
 
   --container-max-width: 800px;
 
