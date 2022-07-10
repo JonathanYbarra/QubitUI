@@ -2,19 +2,25 @@ import { ReactElement } from "react";
 import { Props } from "./Button.types";
 import clsx from "../../../utils/clsx";
 import styles from "./button.module.css";
-import Text from "../../atoms/Text/index";
 
 export const Button = ({
   children,
   type = "button",
   disabled = false,
   appearance = "primary",
+  size = "md",
+  block = false,
 }: Props): ReactElement => {
-  const buttonClass = clsx(styles.button, styles[`btn-${appearance}`]);
+  const buttonClass = clsx(
+    styles.button,
+    styles[`btn-${appearance}`],
+    styles[`btn-${size}`],
+    { [styles["btn-block"]]: block }
+  );
 
   return (
     <button type={type} disabled={disabled} className={buttonClass}>
-      <Text color="light">{children as string | ReactElement}</Text>
+      {children}
     </button>
   );
 };

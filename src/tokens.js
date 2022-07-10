@@ -165,14 +165,14 @@ const choices = {
 
     green: {
       50: "#f0fdf4",
-      100: "#dcfce7",
+      100: "#C8F9E8",
       200: "#bbf7d0",
-      300: "#86efac",
+      300: "#94F3DA",
       400: "#4ade80",
       500: "#22c55e",
-      600: "#16a34a",
-      700: "#15803d",
-      800: "#166534",
+      600: "#026E78",
+      700: "#015364",
+      800: "#003C51",
       900: "#14532d",
     },
 
@@ -400,7 +400,7 @@ const choices = {
 
 const decisions = {
   color: {
-    primary: choices.color.brand.eastBay,
+    primary: choices.color.green[600],
     primaryMuted: choices.color.brand.slateBlue,
     primaryHighlight: choices.color.brand.blueMoon,
     primaryInverted: choices.color.brand.romance,
@@ -426,13 +426,22 @@ const decisions = {
   container: {
     maxWidth: "800px",
   },
-  button: {
-    maxWidth: "300px",
-    borderRadius: {
-      sm: choices.borderRadius.sm,
-      md: choices.borderRadius.md,
-      lg: choices.borderRadius.lg,
+  border: {
+    radius: {
+      1: "0.25rem",
+      2: "0.5rem",
+      3: "0.75rem",
+      4: "1rem",
+      5: "2.5rem",
+      6: "50%",
     },
+  },
+  button: {
+    xsmall: "2rem",
+    small: "2.5rem",
+    medium: "2.75rem",
+    large: "3rem",
+    xlarge: "3.5rem",
   },
   input: {
     height: "38px",

@@ -3,6 +3,7 @@ import clsx from "../../../utils/clsx";
 import styles from "./text.module.css";
 import typography from "../../../styles/typography.module.css";
 import colors from "../../../styles/color.module.css";
+import { DefaultColors } from "../../../common";
 
 const variants = {
     p: "p",
@@ -22,7 +23,7 @@ export type Props = {
     variant?: Variants;
     className?: string;
     align?: "left" | "center" | "right";
-    color?: "primary" | "secondary" | "tertiary" | "light";
+    color?: DefaultColors;
 } & HTMLAttributes<HTMLElement>;
 
 export const Text = ({ variant = "span", className, align = "left", color, ...rest }: Props): ReactElement => {

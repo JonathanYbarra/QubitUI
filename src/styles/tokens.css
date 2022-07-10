@@ -141,14 +141,14 @@
   --color-emerald-900: #064e3b;
 
   --color-green-50: #f0fdf4;
-  --color-green-100: #dcfce7;
+  --color-green-100: #C8F9E8;
   --color-green-200: #bbf7d0;
-  --color-green-300: #86efac;
+  --color-green-300: #94F3DA;
   --color-green-400: #4ade80;
   --color-green-500: #22c55e;
-  --color-green-600: #16a34a;
-  --color-green-700: #15803d;
-  --color-green-800: #166534;
+  --color-green-600: #026E78;
+  --color-green-700: #015364;
+  --color-green-800: #003C51;
   --color-green-900: #14532d;
 
   --color-lime-50: #f7fee7;
@@ -339,7 +339,7 @@
   --z-index-50: 50;
   --z-index-auto: auto;
 
-  --color-primary: #455970;
+  --color-primary: #026E78;
   --color-primary-muted: #7559d1;
   --color-primary-highlight: #eff1fd;
   --color-primary-inverted: #fcfdfd;
@@ -363,11 +363,18 @@
 
   --container-max-width: 800px;
 
-  --button-max-width: 300px;
+  --border-radius-1: 0.25rem;
+  --border-radius-2: 0.5rem;
+  --border-radius-3: 0.75rem;
+  --border-radius-4: 1rem;
+  --border-radius-5: 2.5rem;
+  --border-radius-6: 50%;
 
-  --button-border-radius-sm: 10px;
-  --button-border-radius-md: 20px;
-  --button-border-radius-lg: 30px;
+  --button-xsmall: 2rem;
+  --button-small: 2.5rem;
+  --button-medium: 2.75rem;
+  --button-large: 3rem;
+  --button-xlarge: 3.5rem;
 
   --input-height: 38px;
   --input-max-width: 400px;

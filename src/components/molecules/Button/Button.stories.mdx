@@ -1,5 +1,6 @@
 import { Canvas, Meta, Story, Source } from "@storybook/addon-docs";
 import { Button } from "./Button.tsx";
+import { Wrapper } from "../../atoms/Wrapper";
 
 <Meta
   title="Molecules / Button"
@@ -15,10 +16,76 @@ You can import Tag component as follows.
 
 ---
 
+# Button Appearance
+
 <Canvas>
-  <Story name="Buttons">
-    <Button>Continue</Button>
-    <Button>Submit</Button>
-    <Button>Send</Button>
+  <Story name="Button Secondary">
+    <Wrapper flex align="center" gap="1">
+      <Button size="sm" appearance="primary">
+        Button primary
+      </Button>
+      <Button size="sm" appearance="secondary">
+        Button secondary
+      </Button>
+    </Wrapper>
+  </Story>
+</Canvas>
+
+---
+
+# Button Sizes
+
+<Canvas>
+  <Story name="Button Sizes">
+    <Wrapper flex align="center" gap="1">
+      <Button size="xs">Button xs</Button>
+      <Button size="sm">Button sm</Button>
+      <Button size="md">Button md</Button>
+      <Button size="lg">Button lg</Button>
+      <Button size="xl">Button xl</Button>
+    </Wrapper>
+  </Story>
+</Canvas>
+
+---
+
+# Button Disabled
+
+<Canvas>
+  <Story name="Button Disabled">
+    <Wrapper flex align="center" gap="1">
+      <Button size="sm" disabled>
+        Disabled sm
+      </Button>
+      <Button appearance="secondary" size="sm" disabled>
+        Disabled sm
+      </Button>
+    </Wrapper>
+  </Story>
+</Canvas>
+
+---
+
+# Button Block
+
+<Canvas>
+  <Story name="Button Block">
+    <Wrapper column gap="2">
+      <Button size="xs" block>
+        Button block xs
+      </Button>
+      <Button appearance="secondary" size="sm" block>
+        Button block sm
+      </Button>
+      <Button size="md" block>
+        Button block md
+      </Button>
+      <Button size="lg" block>
+        Button block lg
+      </Button>
+      <Button size="xl" block>
+        Button block xl
+      </Button>
+    </Wrapper>
   </Story>
 </Canvas>

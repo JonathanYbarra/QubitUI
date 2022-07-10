@@ -1,8 +1,8 @@
-import { HTMLAttributes, ReactElement } from "react";
+import { HTMLAttributes } from "react";
 
 export type Props = {
   /** React node of type children. */
-  children?: ReactElement | string;
+  children?: string;
   /** Type of appearance */
   appearance?: "primary" | "secondary" | "default" | "danger";
   /** Indicates if the button is disabled */
@@ -13,4 +13,6 @@ export type Props = {
   onBlur?: (event: React.FocusEvent<HTMLButtonElement>) => void;
   /** The type of button */
   type?: "button" | "submit" | "reset";
+  size?: "xs" | "sm" | "md" | "lg" | "xl";
+  block?: boolean;
 } & HTMLAttributes<HTMLElement>;
