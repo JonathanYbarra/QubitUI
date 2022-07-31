@@ -1,10 +1,12 @@
 import { HTMLAttributes } from "react";
 
+type Appearance = "primary" | "secondary" | "danger" | "blue" | "purple";
+
 export type Props = {
   /** React node of type children. */
   children?: string;
   /** Type of appearance */
-  appearance?: "primary" | "secondary" | "default" | "danger";
+  appearance?: Appearance;
   /** Indicates if the button is disabled */
   disabled?: boolean;
   /** Type of react mouse event onclick to manage event click and void return. */
