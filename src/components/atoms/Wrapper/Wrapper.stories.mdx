@@ -1,0 +1,45 @@
+import { Canvas, Meta, Story, Source } from "@storybook/addon-docs";
+import { Wrapper } from "./Wrapper";
+
+<Meta
+  title="Atoms / Wrapper"
+  component={Wrapper}
+  parameters={{ controls: { sort: "requiredFirst" } }}
+/>
+
+# **How to import**
+
+You can import Wrapper component as follows.
+
+<Source code='import { Wrapper } from "qubit-ui";' language="jsx" />
+
+---
+
+### Examples 
+
+Wrapper justify content space between
+
+<Canvas>
+  <Story name="Wrapper between">
+    <Wrapper justify="between">
+        <span>Wrapper</span>
+        <span>content</span>
+    </Wrapper>
+  </Story>
+</Canvas>
+
+---
+
+Wrapper display flex and gap
+
+<Canvas>
+  <Story name="Wrapper gap">
+    <Wrapper flex gap="2">
+        <span>Wrapper</span>
+        <span>gap</span>
+        <span>content</span>
+        <span>examples</span>
+    </Wrapper>
+  </Story>
+</Canvas>
+
